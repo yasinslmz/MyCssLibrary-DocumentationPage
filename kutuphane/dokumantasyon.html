@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dökümantasyon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dokumantasyon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar h-100">
+        <ul class="flex-menu p-4 m-0">
+            <li><a href="#grid">Grid Yapısı</a></li>
+            <li><a href="#color">Renkler</a></li>
+            <li><a href="#font-size">Font boyutu</a></li>
+            <li><a href="#font-aile">Font ailesi</a></li>
+            <li><a href="#pad-mar">Padding ve Margin</a></li>
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#tablolar">Tablolar</a></li>
+            <li><a href="#resimler">İmage</a></li>
+            <li><a href="#outline-buton">Outline Buton</a></li>
+            <li><a href="#overflow">Overflow</a></li>
+            <li><a href="#nav-menu">Nav menü</a></li>
+            <li><a href="#drop">Dropdown</a></li>
+            <li><a href="#form-yapisi">Form</a></li>
+            
+        </ul>
+    </div>
+    <div class="icerik bg-white">
+        <div class="ortala font-1 txt-black">
+            <h2 class="mt-0">CSS KÜTÜPHANESİ DÖKÜMANTASYONU</h2>
+        </div>
+
+        <div class="grid ms-3 me-3 ps-3 pe-5 font-2" id="grid">
+            <h3>Grid Yapısı</h3>
+            <p>Grid yapısı kullanılarak bir blok 12 eş parçaya
+                ayrılır bu sayede istenilen elemanın genişliği 
+                kaç parçadan oluşacağı belirlenir.
+            </p>
+            <p>
+                12 eş parçaya bölmek istediğiniz bloğa "row" class'ını veriniz. Row bloğunun içindeki elemanların genişliğini ne kadar dilerseniz o kadar belirleyiniz. Şuna dikkat ediniz her blok 12 parçadan oluşur.
+                Row bloğunun içindeki elemanlara "col-2","col-5" veya "col-10" class ı tanımlayabilirsiniz. Kullanımı bu şekildedir "col-" yazılıp yanına dilediğiniz uzunluğu yazınız.Column sayılarının toplamının 12
+                olmasına dikkat ediniz. Aşağıdaki kullanımı inceleyiniz.            
+            </p>
+            <div class="row">
+                <div class="kutu bg-gray col-3 h-200">
+                    <h2 class="txt-white">
+                        kutu
+                    </h2>
+                </div>
+                <div class="kutu  bg-gray col-5">
+                    <h2 class="txt-white">
+                        kutu
+                    </h2>
+                </div>
+                <div class="kutu  bg-gray col-2">
+                    <h2 class="txt-white">
+                        kutu
+                    </h2>
+                </div>
+                <div class="kutu  bg-gray col-2">
+                    <h2 class="txt-white">
+                        kutu
+                    </h2>
+                </div>
+                
+            </div>
+
+            <div class="kod">
+                <h4>Kod örneği</h4>
+                <pre class="">
+                    <a href="" class="txt-black">Kopyala</a>
+                    <code>
+                        &lt;div class="row"&gt;
+                            &lt;div class="kutu bg-gray col-3 h-200"&gt;
+                                &lt;h2 class="txt-white"&gt;
+                                    col-3
+                                &lt;/h2&gt;
+                            &lt;/div&gt;
+                            &lt;div class="kutu  bg-gray col-5"&gt;
+                                &lt;h2 class="txt-white"&gt;
+                                    col-5
+                                &lt;/h2&gt;
+                            &lt;/div&gt;
+                            &lt;div class="kutu  bg-gray col-2"&gt;
+                                &lt;h2 class="txt-white"&gt;
+                                    col-2
+                                &lt;/h2&gt;
+                            &lt;/div&gt;
+                            &lt;div class="kutu  bg-gray col-2"&gt;
+                                &lt;h2 class="txt-white"&gt;
+                                    col-2
+                                &lt;/h2&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/div&gt;
+
+                    </code>
+
+                </pre>
+
+            </div>
+
+
+        </div>
+        <div class="color ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="color">
+            <h3>Renkler</h3>
+            <h4>Font renkleri</h4>
+            <p>Font'unuzun rengini değiştirmek için class olarak "txt-" yazdıktan sonra hangi rengi istiyorsanız onun
+                ismini ekleyiniz; örneğin "txt-yellow".
+            </p>
+            <p>
+                Font renkleri şunlardır: green, warning, danger, info, default, yellow, brown,
+                 black, lacivert, gray, white.
+            </p>
+            <div class="row font fonts">
+                <div><span class="txt-green">Text</span></div>
+                <div><span class="txt-warning">Text</span></div>
+                <div><span class="txt-danger">Text</span></div>
+                <div><span class="txt-info">Text</span></div>
+                <div><span class="txt-default">Text</span></div>
+                <div><span class="txt-yellow">Text</span></div>
+                <div><span class="txt-brown">Text</span></div>
+                <div><span class="txt-black">Text</span></div>
+                <div><span class="txt-lacivert">Text</span></div>
+                <div><span class="txt-gray">Text</span></div>
+                <div><span class="txt-white">Text</span></div>
+
+            </div>
+            <div class="kod">
+                <pre >
+                    <a href="">Kopyala</a>
+                    <code>
+                        <div class="row font">
+                            &lt;div&gt;&lt;span class="txt-green"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-warning"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-danger"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-info"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-default"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-yellow"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-brown"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-black"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-lacivert"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-gray"&gt;Text&lt;/span&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;span class="txt-white"&gt;Text&lt;/span&gt;&lt;/div&gt;
+            
+                        </div>
+                    </code>
+                </pre>
+            </div>
+
+            <h4>Buton Renkleri</h4>
+            <p>Butonlarınız arka plan rengini de aynı şekilde değiştirebilirsiniz."bg-" yazdıktan sonra istediğiniz arka plan
+                rengini butona verebilirsiniz. Örneğin "bg-success".
+            </p>
+            <p>Butonlarınız yuvarlak köşeli ve padding değerli olmasını isterseniz "btn" class ını ekleyebilirsiniz.</p>
+            <div class="row font mt-3 butons">
+                <div><a class="bg-success btn txt-white">Buton</a></div>
+                <div><a class="bg-warning btn txt-white">Buton</a></div>
+                <div><a class="bg-danger btn txt-white">Buton</a></div>
+                <div><a class="bg-info btn txt-white">Buton</a></div>
+                <div><a class="bg-default btn txt-white">Buton</a></div>
+                <div><a class="bg-yellow btn txt-lacivert">Buton</a></div>
+                <div><a class="bg-brown btn txt-white">Buton</a></div>
+                <div><a class="bg-black btn txt-white">Buton</a></div>
+                <div><a class="bg-lacivert btn txt-white">Buton</a></div>
+                <div><a class="bg-gray btn txt-white">Buton</a></div>
+                <div><a class="bg-white btn txt-black">Buton</a></div>
+
+            </div>
+            <div class="kod">
+                <pre >
+                    <a href="">Kopyala</a>
+                    <code>
+                        <div class="row font">
+                            &lt;div&gt;&lt;a class="bg-success btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-warning btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-danger btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-info btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-default btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-yellow btn txt-lacivert"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-brown btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-black btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-lacivert btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-gray btn txt-white"&gt;Text&lt;/a&gt;&lt;/div&gt;
+                            &lt;div&gt;&lt;a class="bg-white btn txt-black"&gt;Text&lt;/a&gt;&lt;/div&gt;
+            
+                        </div>
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+
+        <div class="font-size ms-3 me-3 mt-4 ps-3 pe-5 font-2 " id="font-size">
+            <h3>Font boyutu</h3>
+            <h4>Paragraf yazı boyutu</h4>
+            <p>Yazı boyutunu "f-" yazdıktan sonra hangi boyutta istiyorsanız
+                o boyutu "-" işaretinden sonra yazınız. Font boyutu 14'ten başlayarak
+                32px'e kadar arttırılır.
+            </p>
+            <span class="f-14">Text</span>
+            <span class="f-16">Text</span>
+            <span class="f-18">Text</span>
+            <span class="f-20">Text</span>
+            <span class="f-22">Text</span>
+            <span class="f-24">Text</span>
+            <span class="f-26">Text</span>
+            <span class="f-28">Text</span>
+            <span class="f-30">Text</span>
+            <span class="f-32">Text</span>
+            <div class="kod">
+                <pre >
+                    <a href="">Kopyala</a>
+                    <code>
+                        
+                            &lt;span class="f-14"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-16"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-18"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-20"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-22"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-24"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-26"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-28"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-30"&gt;Text&lt;/span&gt;
+                            &lt;span class="f-32"&gt;Text&lt;/span&gt;
+            
+                       
+                    </code>
+                </pre>
+            </div>
+
+            
+            <h4>Başlık boyutu</h4>
+            <h2 class="h-35">Başlık</h2>
+            <h2 class="h-40">Başlık</h2>
+            <h2 class="h-45">Başlık</h2>
+            <h2 class="h-50">Başlık</h2>
+            <h2 class="h-55">Başlık</h2>
+
+            <div class="kod">
+                <pre >
+                    <a href="">Kopyala</a>
+                    <code >
+                        &lt;h2 class="h-35"&gt;Başlık&lt;/h2&gt;
+                        &lt;h2 class="h-40"&gt;Başlık&lt;/h2&gt;
+                        &lt;h2 class="h-45"&gt;Başlık&lt;/h2&gt;
+                        &lt;h2 class="h-50"&gt;Başlık&lt;/h2&gt;
+                        &lt;h2 class="h-55"&gt;Başlık&lt;/h2&gt;
+                            
+            
+                       
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="font-aile ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="font-aile">
+            <h3>Font Ailesi</h3>
+            <p>5 farklı font yazı ailesinden istediğinizi kullanabilirsiniz. Kullanmak için "font-" yazdıktan sonra 1'den 5'e kadar olan fontlardan birini
+                seçiniz. Örneğin "font-3" . 
+            </p>
+            <div class="row">
+                <span class="font-1">Gill Sans</span>
+                <span class="font-2">Arial</span>
+                <span class="font-3">Times</span>
+                <span class="font-4">Georgia</span>
+                <span class="font-5">Verdana</span>
+                
+            </div>
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;h2 class="font-1"&gt;Gill Sans&lt;/h2&gt;
+                        &lt;h2 class="font-2"&gt;Arial&lt;/h2&gt;
+                        &lt;h2 class="font-3"&gt;Times&lt;/h2&gt;
+                        &lt;h2 class="font-4"&gt;Georgia&lt;/h2&gt;
+                        &lt;h2 class="font-5"&gt;Verdana&lt;/h2&gt;
+                    </code>
+
+                </pre>
+
+            </div>
+
+        </div>
+        <div class="pad-mar ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="pad-mar">
+            <h3>Padding ve Margin</h3>
+            <h4>Padding</h4>
+            <p>Padding vermek için şu class'ları kullanmalısınız: 4 taraftan
+                padding için "p-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                padding de artar. Örneğin "p-3" .
+            </p>
+            <p> Sol taraftan padding vermek için
+                "ps-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                padding de artar. Örneğin "ps-2" .
+            </p>
+            <p> Üst taraftan padding vermek için
+                "pt-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                padding de artar. Örneğin "pt-2" .
+            </p>
+            <p> Sağ taraftan padding vermek için
+                "pe-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                padding de artar. Örneğin "pe-2" .
+            </p>
+            <p> Alt taraftan padding vermek için
+                "pb-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                padding de artar. Örneğin "pb-2" .
+            </p>
+            <br>
+            <div class="row">
+                <span class="bg-yellow p-3">Text</span>
+                <span class="bg-yellow ps-4 pt-4">Text</span>
+                <span class="bg-yellow pt-5">Text</span>
+                <span class="bg-yellow pe-2">Text</span>
+                <span class="bg-yellow pb-2">Text</span>
+            </div>
+            
+            <br>
+            <br>
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;span class="bg-yellow p-3"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-yellow ps-4 pt-4"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-yellow pt-5"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-yellow pe-2"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-yellow pb-2"&gt;Text&lt;/span&gt;
+                    </code>
+                </pre>
+            </div>
+            <h4>Margin</h4>
+            <p>Margin vermek için şu class'ları kullanmalısınız: 4 taraftan
+                margin için "m-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                margin de artar. Örneğin "m-3" .
+            </p>
+            <p> Sol taraftan margin vermek için
+                "ms-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                margin de artar. Örneğin "ms-2" .
+            </p>
+            <p> Üst taraftan margin vermek için
+                "mt-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                margin de artar. Örneğin "mt-2" .
+            </p>
+            <p> Sağ taraftan margin vermek için
+                "me-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                margin de artar. Örneğin "me-2" .
+            </p>
+            <p> Alt taraftan margin vermek için
+                "mb-" yazdıktan sonra 1 den 5 e kadar rakam seçmelisiniz. Rakam büyüdükçe
+                margin de artar. Örneğin "mb-2" .
+            </p>
+            <div class="row">   
+                <span class="bg-warning m-3">Text</span>
+                <span class="bg-warning ms-4 mt-4">Text</span>
+                <span class="bg-warning mt-5">Text</span>
+                <span class="bg-warning me-2">Text</span>
+                <span class="bg-warning mb-2">Text</span>
+            </div>
+            
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;span class="bg-warning m-3"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-warning ms-4 mt-4"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-warning mt-5"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-warning me-2"&gt;Text&lt;/span&gt;
+                        &lt;span class="bg-yellow mb-2"&gt;Text&lt;/span&gt;
+                    </code>
+                </pre>
+            </div>
+
+
+
+        </div>
+
+        <div class="slider-yapisi ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="slider">
+            <h3>Slider Yapısı</h3>
+            <p>Bir resim koleksiyonunu animasyonlu şekilde göstermek istediğinizde
+                slider yapısını kullanabilirsiniz. Öncelikle bir slider bloğu tanımlamalısınız.
+                3 farklı slider yapısı mevcuttur bunların isimleri şu şekildedir: 
+                "slider" , "slider-hover" , "slider-bt" .
+
+            </p>
+            <p>"slider" class'ı ile otomatik geçişli sonsuza kadar devam eden bir
+                slide animasyonu elde edersiniz.
+            </p>
+            <p>"slider-hover" class'ı ile slide bloğunun üzerine gelindiğinde aktif hale gelen
+                ve üzerinde kalındığında sonsuza kadar devam eden bir animasyon elde edersiniz.
+            </p>
+            <p>
+                "slider-bt" class'ı ile resim bloğunun altında bulunan yuvarlak düğmelere
+                tıklayarak slide'lar arasında geçiş yapabilirsiniz.
+            </p>
+            <p>Slider yapısını kullanırken slider'in içine eklediğiniz 
+                img tag'lerine "img-fit" class'ını vermeyi unutmayınız. Bu class
+                resimlerinizi resim bloğuna tam oturtur.
+            </p>
+            <p>Ayrıca slider class'ı verdiğiniz div bloğunun yüksekliğini de belirleyiniz.</p>
+
+            <h4>"slider"</h4>
+            <div class="slider h-300 mr-5">
+                <div class="slide">
+                    <img src="assets/images/c.jpg" class="img-fit"  alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/b.jpg" class="img-fit"  alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/a.jpg" class="img-fit"  alt="">
+                </div>
+            
+            </div>
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+
+                        // h-300 yüksekliği 300px yapar siz değiştirebilirsiniz
+                        // slider altındaki divlere "slide" class'ını veriniz
+                        
+
+                        &lt;div class="slider h-300 mr-5"&gt;
+                            &lt;div class="slide"&gt;
+                                &lt;img src="assets/images/c.jpg" class="img-fit"  alt=""&gt;
+                            &lt;/div&gt;
+                            &lt;div class="slide"&gt;
+                                &lt;img src="assets/images/b.jpg" class="img-fit"  alt=""&gt;
+                            &lt;/div&gt;
+                            &lt;div class="slide"&gt;
+                                &lt;img src="assets/images/a.jpg" class="img-fit"  alt=""&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/div&gt;
+
+                    </code>
+
+                </pre>
+
+            </div>
+            <br>
+            <h4>"slider-hover"</h4>
+            <div class="slider-hover h-300  mr-5">
+                <div class="slide-h">
+                    <img src="assets/images/c.jpg" class="img-fit"  alt="">
+                </div>
+                <div class="slide-h">
+                    <img src="assets/images/b.jpg" class="img-fit"  alt="">
+                </div>
+                <div class="slide-h">
+                    <img src="assets/images/a.jpg" class="img-fit"  alt="">
+                </div>
+                
+            </div>
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+
+                        // h-300 yüksekliği 300px yapar siz değiştirebilirsiniz
+                        // slider-hover altındaki divlere "slide-h" class'ını veriniz
+                        
+
+                        &lt;div class="slider-hover h-300 mr-5"&gt;
+                            &lt;div class="slide-h"&gt;
+                                &lt;img src="assets/images/c.jpg" class="img-fit"  alt=""&gt;
+                            &lt;/div&gt;
+                            &lt;div class="slide-h"&gt;
+                                &lt;img src="assets/images/b.jpg" class="img-fit"  alt=""&gt;
+                            &lt;/div&gt;
+                            &lt;div class="slide-h"&gt;
+                                &lt;img src="assets/images/a.jpg" class="img-fit"  alt=""&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/div&gt;
+
+                    </code>
+
+                </pre>
+                
+
+            </div>
+            <br>
+            <h4>"slider-bt"</h4>    
+            <div class="slider-bt w-75 ">
+
+                <input type="radio" name="slider" id="slide1" checked>
+        
+                <input type="radio" name="slider" id="slide2">
+        
+                <input type="radio" name="slider" id="slide3">
+        
+                <div class="slides h-300">
+        
+                    <div class="slid" id="slide-1">
+        
+                        <img src="assets/images/a.jpg" class="img-fit" alt="Resim 1">
+        
+                    </div>
+        
+                    <div class="slid" id="slide-2">
+        
+                        <img src="assets/images/b.jpg" class="img-fit" alt="Resim 2">
+        
+                    </div>
+        
+                    <div class="slid" id="slide-3">
+        
+                        <img src="assets/images/c.jpg" class="img-fit" alt="Resim 3">
+        
+                    </div>
+        
+                </div>
+        
+                <div class="navigation">
+        
+                    <label for="slide1" class="dot"></label>
+        
+                    <label for="slide2" class="dot"></label>
+        
+                    <label for="slide3" class="dot"></label>
+        
+                </div>
+        
+            </div>
+
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+
+                        // w-75 ile genişliği yüzde 75 ayarlanmıştır siz isterseniz değiştirebilirsiniz
+                        // slides altındaki divlere "slid" class'ını vermeyi unutmayınız
+                        // h-300 300px olarak alınmıştır siz değiştirebilirsiniz dilediğiniz yükseklikle
+                        // label ve input'lardaki class'ları aşağıdaki örnekte olduğu gibi kendi çalışmanızda mutlaka ekleyiniz
+                        // id ve for gibi özelliklerin doldurulduğuna emin olunuz aksi takdirde butonlar çalışmaz
+
+                        &lt;div class="slider-bt w-75 "&gt;
+
+                            &lt;input type="radio" name="slider" id="slide1" checked&gt;
+                    
+                            &lt;input type="radio" name="slider" id="slide2"&gt;
+                    
+                            &lt;input type="radio" name="slider" id="slide3"&gt;
+                    
+                            &lt;div class="slides h-300"&gt;
+                    
+                                &lt;div class="slid" id="slide-1"&gt;
+                    
+                                    &lt;img src="assets/images/a.jpg" class="img-fit" alt="Resim 1"&gt;
+                    
+                                &lt;/div&gt;
+                    
+                                &lt;div class="slid" id="slide-2"&gt;
+                    
+                                    &lt;img src="assets/images/b.jpg" class="img-fit" alt="Resim 2"&gt;
+                    
+                                &lt;/div&gt;
+                    
+                                &lt;div class="slid" id="slide-3"&gt;
+                    
+                                    &lt;img src="assets/images/c.jpg" class="img-fit" alt="Resim 3"&gt;
+                    
+                                &lt;/div&gt;
+                    
+                            &lt;/div&gt;
+                    
+                            &lt;div class="navigation"&gt;
+                    
+                                &lt;label for="slide1" class="dot"&gt;&lt;/label&gt;
+                    
+                                &lt;label for="slide2" class="dot"&gt;&lt;/label&gt;
+                    
+                                &lt;label for="slide3" class="dot"&gt;&lt;/label&gt;
+                    
+                            &lt;/div&gt;
+                    
+                        &lt;/div&gt;
+
+                    </code>
+
+
+                </pre>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="tablolar ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="tablolar">
+            <h3>Tablolar</h3>
+            <p>Sayfanızda tablo göstermek isterseniz kütüphanemizdeki
+                4 tablo yapısından istediğinizi kullanabilirsiniz.
+            </p>
+            <p>Bu tablo yapıları şunlardır: "table-striped", "table-bordered", "
+                table-hovered", "responsive-table" .
+            </p>
+            <p>Şeritli tablo, sınırlı tablo, hover'lı tablo ve responsive tablolardır.</p>
+            <p>İstediğiniz yapının class'ını table tag'ine veriniz. Örneğin class="table-striped"</p>
+            <br>
+            <h4>"table-striped"</h4>
+            <table class="table-striped ">
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Numara</th>
+                </tr>
+                <tr>
+                    <td>Yasin</td>
+                    <td>Solmaz</td>
+                    <td>24234523532</td>
+                </tr>
+                <tr>
+                    <td>Ela</td>
+                    <td>Derin</td>
+                    <td>112342412</td>
+                </tr>
+                <tr>
+                    <td>Ferit</td>
+                    <td>Turan</td>
+                    <td>3322552</td>
+                </tr>
+            </table>
+
+            <div class="kod"> 
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;table class="table-striped "&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Ad&lt;/th&gt;
+                                &lt;th&gt;Soyad&lt;/th &gt;
+                                &lt;th&gt;Numara&lt;/th &gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Yasin&lt;/td&gt;
+                                &lt;td&gt;Solmaz&lt;/td&gt;
+                                &lt;td&gt;24234523532&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ela&lt;/td&gt;
+                                &lt;td&gt;Derin&lt;/td&gt;
+                                &lt;td&gt;112342412&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ferit&lt;/td&gt;
+                                &lt;td&gt;Turan&lt;/td&gt;
+                                &lt;td&gt;3322552&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+
+
+                    </code>
+            </pre>
+            </div>
+
+            <h4>"table-bordered"</h4>
+            <table class="table-bordered">
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Numara</th>
+                </tr>
+                <tr>
+                    <td>Yasin</td>
+                    <td>Solmaz</td>
+                    <td>24234523532</td>
+                </tr>
+                <tr>
+                    <td>Ela</td>
+                    <td>Derin</td>
+                    <td>112342412</td>
+                </tr>
+                <tr>
+                    <td>Ferit</td>
+                    <td>Turan</td>
+                    <td>3322552</td>
+                </tr>
+            </table>
+            <div class="kod"> 
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;table class="table-bordered "&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Ad&lt;/th&gt;
+                                &lt;th&gt;Soyad&lt;/th &gt;
+                                &lt;th&gt;Numara&lt;/th &gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Yasin&lt;/td&gt;
+                                &lt;td&gt;Solmaz&lt;/td&gt;
+                                &lt;td&gt;24234523532&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ela&lt;/td&gt;
+                                &lt;td&gt;Derin&lt;/td&gt;
+                                &lt;td&gt;112342412&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ferit&lt;/td&gt;
+                                &lt;td&gt;Turan&lt;/td&gt;
+                                &lt;td&gt;3322552&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+
+
+                    </code>
+            </pre>
+            </div>
+            <h4>"table-hovered"</h4>
+            <table class="table-hovered p-5">
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Numara</th>
+                </tr>
+                <tr>
+                    <td>Yasin</td>
+                    <td>Solmaz</td>
+                    <td>24234523532</td>
+                </tr>
+                <tr>
+                    <td>Ela</td>
+                    <td>Derin</td>
+                    <td>112342412</td>
+                </tr>
+                <tr>
+                    <td>Ferit</td>
+                    <td>Turan</td>
+                    <td>3322552</td>
+                </tr>
+            </table>
+            <div class="kod"> 
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;table class="table-hovered "&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Ad&lt;/th&gt;
+                                &lt;th&gt;Soyad&lt;/th &gt;
+                                &lt;th&gt;Numara&lt;/th &gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Yasin&lt;/td&gt;
+                                &lt;td&gt;Solmaz&lt;/td&gt;
+                                &lt;td&gt;24234523532&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ela&lt;/td&gt;
+                                &lt;td&gt;Derin&lt;/td&gt;
+                                &lt;td&gt;112342412&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ferit&lt;/td&gt;
+                                &lt;td&gt;Turan&lt;/td&gt;
+                                &lt;td&gt;3322552&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+
+
+                    </code>
+            </pre>
+            </div>
+            <br>
+            <h4>"responsive-table"</h4>
+            <p>Diğer tablolardan farklı olarak tablomuzu bir div bloğu içerisine
+                almamzı gerekmektedir. Kapsayıcı div'e "responsive-table" verilir. İçindeki
+                tabloya ise "table-responsive". Aşağıdaki örnekte strip yapısı da eklenmiştir dilerseniz eklemeyebilirsiniz.
+            </p>
+            <div class="responsive-table">
+                <table class="table-responsive table-striped">
+                    <tr>
+                        <th>Ad</th>
+                        <th>Soyad</th>
+                        <th>Numara</th>
+                        <th>Şehir</th>
+                        <th>İlçe</th>
+                        <th>Mahalle</th>
+                    </tr>
+                    <tr>
+                        <td>Yasin</td>
+                        <td>Solmaz</td>
+                        <td>24234523532</td>
+                        <td>İstanbul</td>
+                        <td>Ataşehir</td>
+                        <td>Mevlana</td>
+                    </tr>
+                    <tr>
+                        <td>Ela</td>
+                        <td>Derin</td>
+                        <td>112342412</td>
+                        <td>Sivas</td>
+                        <td>Divriği</td>
+                        <td>Yenimahalle</td>
+                    </tr>
+                    <tr>
+                        <td>Ferit</td>
+                        <td>Turan</td>
+                        <td>3322552</td>
+                        <td>Karabük</td>
+                        <td>Derince</td>
+                        <td>Çamoluk</td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="kod"> 
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;div class="responsive-table"&gt;
+                        
+                        &lt;table class="table-responsive  table-striped"&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Ad&lt;/th&gt;
+                                &lt;th&gt;Soyad&lt;/th &gt;
+                                &lt;th&gt;Numara&lt;/th &gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Yasin&lt;/td&gt;
+                                &lt;td&gt;Solmaz&lt;/td&gt;
+                                &lt;td&gt;24234523532&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ela&lt;/td&gt;
+                                &lt;td&gt;Derin&lt;/td&gt;
+                                &lt;td&gt;112342412&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ferit&lt;/td&gt;
+                                &lt;td&gt;Turan&lt;/td&gt;
+                                &lt;td&gt;3322552&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/div&gt;
+
+                    </code>
+            </pre>
+            </div>
+
+
+        </div>
+
+        <div class="resimler ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="resimler">
+            <h3>İmage</h3>
+            <p>Resimlerinizi bir tag'in içine koyduğunuzda o bloğu tam kaplasın
+                ve ona sığsın istiyorsanız "img-fit" class'ını kullanabilirsiniz veya 
+                hem sığsın hem de resim yuvarlak olsun istiyorsanız "rounded-image" class'ını kullanabilirsiniz.
+            </p>
+            <br>
+            <h4>"img-fit"</h4>
+            <div class="h-200" style="width: 250px;">
+                <img class="img-fit" src="assets/images/a.jpg" alt="">
+        
+           </div>
+           <div class="kod">
+            <pre>
+                <a href="">Kopyala</a>
+                <code>
+
+                    // 200px yükseklik verilmiştir h-200 ile siz değiştirebilirsiniz
+                    // genişlik 300px seçilmiştir bunu da değiştirebilirsiniz
+                    // img etiketine img-fit class'ını vermelisiniz
+
+                    &lt;div class="h-200" style="width: 300px;"&gt;
+                        &lt;img class="img-fit" src="assets/images/a.jpg" alt=""&gt;
+                
+                   &lt;/div&gt;
+
+                </code>
+                </pre>
+           </div>
+           <br>
+           <h4>"rounded-image"</h4>
+            <div class="h-200" style="width: 250px;">
+                <img class="rounded-image" src="assets/images/a.jpg" alt="">
+        
+           </div>
+           <div class="kod">
+            <pre>
+                <a href="">Kopyala</a>
+                <code>
+
+                    // 200px yükseklik verilmiştir h-200 ile siz değiştirebilirsiniz
+                    // genişlik 300px seçilmiştir bunu da değiştirebilirsiniz
+                    // img etiketine img-fit class'ını vermelisiniz
+
+                    &lt;div class="h-200" style="width: 300px;"&gt;
+                        &lt;img class="rounded-image" src="assets/images/a.jpg" alt=""&gt;
+                
+                   &lt;/div&gt;
+
+                </code>
+                </pre>
+           </div>
+
+        </div>
+        
+        <div class="outlinebutton ms-3 me-3 mt-4 ps-3 pe-5 font-2 " id="outline-buton">
+            <h3>Outline Buton</h3>
+            <p>Butonlarınızın etrafı border'lı yapmak isterseniz ve arka plan rengine
+                uygun yazı rengi de vermek isterseniz outline buton kullanabilirsiniz. Ayrıca hover ile de aktif olur.
+            </p>
+            <p>Butonlarınıza varsayılan bir buton özelliği vermek için "btn" class'ını ekleyiniz.
+                Butonlarınıza outline vermek ve hover özelliği de vermek isterseniz "btn-renk-outline" class'ını ekleyiniz.
+                renk yazan yere aşağıdaki renklerden birini seçerek yazabilirsiniz.
+            </p>
+            <br>
+            <div class="row">
+                <a href="" class="btn btn-success-outline">selam</a>
+                <a href="" class="btn btn-warning-outline">selam</a>
+                <a href="" class="btn btn-danger-outline">selam</a>
+                <a href="" class="btn btn-info-outline">selam</a>
+                <a href="" class="btn btn-default-outline">selam</a>
+                <a href="" class="btn btn-yellow-outline">selam</a>
+                <a href="" class="btn btn-brown-outline">selam</a>
+                <a href="" class="btn btn-black-outline">selam</a>
+                <a href="" class="btn btn-lacivert-outline">selam</a>
+                <a href="" class="btn btn-gray-outline">selam</a>
+            </div>
+            
+    
+    
+    
+            <br>
+            <br>
+
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+
+                        &lt;a href="" class="btn btn-success-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-warning-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-danger-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-info-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-default-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-yellow-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-brown-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-black-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-lacivert-outline"&gt;selam&lt;/a&gt;
+                        &lt;a href="" class="btn btn-gray-outline"&gt;selam&lt;/a&gt;
+
+
+                    </code>
+                </pre>
+
+            </div>
+
+        </div>
+
+        <div class="overflow ms-3 me-3 mt-4 ps-3 pe-5 font-2 " id="overflow">
+            <h3>Overflow</h3>
+            <p>Div bloklarınız veya bir tag'in içine eklediğiniz
+                img'lerin o div'e göre şekillenmesini veya taşmasını engellemek
+                isterseniz overflow yapısını kullanabilirsiniz. Scroll ekleyerek resimlerinizi
+                görüntüleyebilirsiniz.
+            </p>
+            <p>Div içindeki resmin hidden olarak görünmesini istiyorsanız taşmasını
+                istemiyorsanız "resim-hidden" class'ını kullanınız.
+            </p>
+            <p>Div içindeki resmin tam olarak görünmesini istiyorsanız taşmasını
+                istemiyorsanız "resim-tam" class'ını kullanınız.
+            </p>
+            <p>Div içindeki resmin genişlikte tam olmasını fakat yükseklikte scroll ile
+                göstermek istiyorsanız "resim-scroll-y" kullanınız.
+            </p>
+            <p>Div içindeki resmin yükseklikte tam olmasını fakat genişlikte scroll ile
+                göstermek istiyorsanız "resim-scroll-x" kullanınız.
+            </p>
+            <div style="display: flex;gap: 20px;">
+                <div class="resim-hidden w-200 h-200">
+                    <img src="assets/images/c.jpg" alt="">
+                </div>
+                <div class="resim-tam w-200 h-200">
+                    <img src="assets/images/c.jpg" alt="">
+                </div>
+                <div class="resim-scroll-y w-300" style="height: 150px;">
+                    <img src="assets/images/c.jpg" alt="">
+                </div>
+                <div class="resim-scroll-x w-200 h-300">
+                    <img src="assets/images/c.jpg" alt="">
+                </div>
+            </div>
+            
+            
+
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        // w-200 ve h-200 200'er pixel verir genişlik ve yükseklik için siz farklı değer verebilirsiniz.
+                        // div lerin genişliğini siz değiştirebilirsiniz buradaki örneklerde random atanmıştır.
+
+                        &lt;div class="resim-hidden w-200 h-200"&gt;
+                            &lt;img src="assets/images/c.jpg" alt=""&gt;
+                        &lt;/div&gt;
+                        &lt;div class="resim-tam w-200 h-200"&gt;
+                            &lt;img src="assets/images/c.jpg" alt=""&gt;
+                        &lt;/div&gt;
+                        &lt;div class="resim-scroll-y w-300" style="height: 150px;">
+                            &lt;img src="assets/images/c.jpg" alt=""&gt;
+                        &lt;/div&gt;
+                        &lt;div class="resim-scroll-x w-200 h-300"&gt;
+                            &lt;img src="assets/images/c.jpg" alt=""&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+
+
+        <div class="nav-menu ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="nav-menu">
+            <h3>Nav menü</h3>
+            <p>3 çeşit navbar menümüz vardır. Bunlar: "inline-menu", "flex-menu" , "block-menu" dır.</p>
+            <p>Hangi class'ı istiyorsanız o class'ı o ul etiketine veriniz.</p>
+            <p>İnline menu de elemanlar yan yana olur. Flex menude alt alta olur ve sola yaslı olur. Block menu'de elemanlar alt alta olur.</p>
+            <br>
+            <h4>"inline-menu"</h4>
+            
+            <ul class="inline-menu menu-row" style="text-align: center;">
+                    <li><a href="" class="btn f-26">anasayfa</a></li>
+                    <li><a href="" class="btn f-26">hakkımızda</a></li>
+                    <li ><a href="" class="btn f-26">ürünler</a></li>
+                    <li><a href="" class="btn f-26">iletişim</a></li>
+            </ul>
+            <br>
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;ul class="inline-menu" style="text-align: center;"&gt;
+                            &lt;li&gt;&lt;a href="" class="btn f-26"&gt;anasayfa&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="" class="btn f-26"&gt;hakkımızda&lt;/a&gt;&lt;/li&gt;
+                            &lt;li &gt;&lt;a href="" class="btn f-26"&gt;ürünler&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="" class="btn f-26"&gt;iletişim&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <h4>"flex-menu"</h4>
+            <br>
+
+            <div>
+                <ul class="flex-menu"">
+                    <li class="mb-4"><a href="" class="f-26 btn">anasayfa</a></li>
+                    <li class="mb-4"><a href="" class="f-26 btn">hakkımızda</a></li>
+                    <li class="mb-4"><a href="" class="f-26 btn">ürünler</a></li>
+                    <li class="mb-4"><a href="" class="f-26 btn">iletişim</a></li>
+                </ul>
+            </div>
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;ul class="flex-menu"&gt;
+                            &lt;li class="mb-4"&gt;&lt;a href="" class="btn f-26"&gt;anasayfa&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="mb-4"&gt;&lt;a href="" class="btn f-26"&gt;hakkımızda&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="mb-4" &gt;&lt;a href="" class="btn f-26"&gt;ürünler&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="mb-4"&gt;&lt;a href="" class="btn f-26"&gt;iletişim&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+            </div>
+                
+            <br>
+            <h4>"block-menu"</h4>
+            <div class="block-menu">
+                <ul>
+                    <li class=" mt-4"><a href="" class="btn">Anasayfa</a></li>
+                    <li class=" mt-4"><a href="" class="btn">Hakkımızda</a></li>
+                    <li class=" mt-4"><a href="" class="btn">Galeri</a></li>
+                    <li class=" mt-4"><a href="" class="btn">İletişim</a></li>
+                </ul>
+                
+    
+            </div>
+            <br>
+
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        
+                        //burada ul etiketini bir div'in içine alıyoruz ve o dive "block-menu" class'ı vererek yapıyoruz
+                        
+                        &lt;div class="block-menu"&gt;
+                        &lt;ul&gt;
+                            &lt;li class=" mt-4"&gt;&lt;a href="" class="btn f-26"&gt;anasayfa&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=" mt-4"&gt;&lt;a href="" class="btn f-26"&gt;hakkımızda&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=" mt-4" &gt;&lt;a href="" class="btn f-26"&gt;ürünler&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=" mt-4"&gt;&lt;a href="" class="btn f-26"&gt;iletişim&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+
+        <div class="drop ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="drop">
+
+            <h3>Dropdown</h3>
+            <p>Dropdown vermek istediğiniz etikete "dropdown" class'ı veriniz. İçindeki div'e de "dropdown-content" class'ı veriniz.</p>
+            <br>
+            <div class="dropdown">
+                <a href="" class="btn btn-info f-22 txt-black">Ürünler <i class="fa-solid fa-arrow-down-long fa-xs"></i> </a>
+                <div class="dropdown-content">
+                <a href="">Telefon</a>
+                <a href="">Tablet</a>
+                <a href="">Televizyon</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+                        &lt;div class="dropdown"&gt;
+                            &lt;a href="" class="btn btn-info f-22 txt-black"&gt;Ürünler&lt;/a&gt;
+                            &lt;div class="dropdown-content"&gt;
+                            &lt;a href=""&gt;Telefon&lt;/a&gt;
+                            &lt;a href=""&gt;Tablet&lt;/a&gt;
+                            &lt;a href=""&gt;Televizyon&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    </code>
+                </pre>
+            </div>
+            
+
+
+            
+        </div>
+
+        <div class="form-yapisi ms-3 me-3 mt-4 ps-3 pe-5 font-2" id="form-yapisi">
+            <h3>Form</h3>
+            <p>Form yapısını kullanmak isterseniz form tag'ine "form" class'ını veriniz.</p>
+            <p>Ayrıca formun düzenli görünmesini sağlayan row yapısını ve diğer id ve for özellikleri için
+                yazılmış olan eklemeleri de kodunuza ekleyiniz.
+                Aşağıdaki örneği detaylı inceleyebilirsiniz.
+            </p>
+            <form action="#" class="form">
+                <div class="row ad-soyad">
+                    <div class="row col-4">
+                        <label class="col-2" for="name">İsim:</label>
+                        <input class="col-8" type="text" id="name">
+                    </div>
+                    <div class="col-4">
+                        <label for="soyad">Soyisim:</label>
+                        <input type="text" id="soyad">
+                    </div>
+                    
+                </div>
+                <div class="row email">
+                    <div class="row col-4 ">
+                        <label class="col-2" for="email">Email:</label>
+                        <input class="col-10" type="text" id="email">
+                    </div>
+                    
+                </div>
+                <div class="row mt-3 sifre">
+                    <div class="row col-4 ">
+                        <label class="col-2" for="sifre">Şifre:</label>
+                        <input class="col-7" type="password" id="sifre">
+                    </div>
+                    
+                </div>
+                <div class="row date">
+                    <div class="row col-4 ">
+                        <label class="col-5" for="dtarihi">Doğum Tarihi:</label>
+                        <input class="col-5" type="date" id="dtarihi">
+                    </div>
+                    
+                </div>
+                <div class="row cinsiyet">
+                    <div class="row col-4 ">
+                        <label class="col-7" for="">Cinsiyet:</label>
+                        <label for="erkek">Erkek</label>
+                        <input type="radio" id="erkek" value="erkek" name="cinsiyet">
+                        
+                        <label for="kadin">Kadın</label>
+                        <input  type="radio" id="kadin" value="kadin" name="cinsiyet">
+                        
+                    </div>
+                    
+                </div>
+                <div class="row info">
+                    <div class="row col-9 ">
+                        <input name="check" type="checkbox" id="bilgilendirme" value="ok">
+                        <label class="col-8 " for="bilgilendirme">Bilgilendirme sözleşmesini okudum ve kabul ettim.</label>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row submit">
+                    <input type="submit" value="Gönder">
+                    
+                </div>
+                
+            </form>
+
+            <div class="kod">
+                <pre>
+                    <a href="">Kopyala</a>
+                    <code>
+
+                        &lt;form action="#" class="form"&gt;
+                            &lt;div class="row ad-soyad"&gt;
+                                &lt;div class="row col-4"&gt;
+                                    &lt;label class="col-2" for="name">İsim:&lt;/label&gt;
+                                    &lt;input class="col-8" type="text" id="name"&gt;
+                                &lt;/div&gt;
+                                &lt;div class="col-4"&gt;
+                                    &lt;label for="soyad"&gt;Soyisim:&lt;/label&gt;
+                                    &lt;input type="text" id="soyad"&gt;
+                                &lt;/div&gt;
+                                
+                            &lt;/div&gt;
+                            &lt;div class="row email"&gt;
+                                &lt;div class="row col-4 "&gt;
+                                    &lt;label class="col-2" for="email"&gt;Email:&lt;/label&gt;
+                                    &lt;input class="col-10" type="text" id="email"&gt;
+                                &lt;/div&gt;
+                                
+                            &lt;/div&gt;
+                            &lt;div class="row mt-3 sifre"&gt;
+                                &lt;div class="row col-4 "&gt;
+                                    &lt;label class="col-2" for="sifre"&gt;Şifre:&lt;/label&gt;
+                                    &lt;input class="col-7" type="password" id="sifre"&gt;
+                                &lt;/div&gt;
+                                
+                            &lt;/div&gt;
+                            &lt;div class="row date"&gt;
+                                &lt;div class="row col-4 "&gt;
+                                    &lt;label class="col-5" for="dtarihi"&gt;Doğum Tarihi:&lt;/label&gt;
+                                    &lt;input class="col-5" type="date" id="dtarihi"&gt;
+                                &lt;/div>
+                                
+                            &lt;/div>
+                            &lt;div class="row cinsiyet"&gt;
+                                &lt;div class="row col-4 "&gt;
+                                    &lt;label class="col-7" for=""&gt;Cinsiyet:&lt;/label&gt;
+                                    &lt;label for="erkek"&gt;Erkek&lt;/label&gt;
+                                    &lt;input type="radio" id="erkek" value="erkek" name="cinsiyet"&gt;
+                                    
+                                    &lt;label for="kadin"&gt;Kadın&lt;/label&gt;
+                                    &lt;input  type="radio" id="kadin" value="kadin" name="cinsiyet"&gt;
+                                    
+                                &lt;/div&gt;
+                                
+                            &lt;/div&gt;
+                            &lt;div class="row info"&gt;
+                                &lt;div class="row col-9 "&gt;
+                                    &lt;input name="check" type="checkbox" id="bilgilendirme" value="ok"&gt;
+                                    &lt;label class="col-8 " for="bilgilendirme"&gt;Bilgilendirme sözleşmesini okudum ve kabul ettim.&lt;/label&gt;
+                                    
+                                &lt;/div&gt;
+                                
+                            &lt;/div&gt;
+                            &lt;div class="row submit"&gt;
+                                &lt;input type="submit" value="Gönder"&gt;
+                                
+                            &lt;/div&gt;
+                            
+                        &lt;/form&gt;
+
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+        
+       
+    </div>
+
+
+    
+</body>
+</html>
